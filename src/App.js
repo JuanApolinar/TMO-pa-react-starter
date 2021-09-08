@@ -45,7 +45,7 @@ function App() {
         <div>
             There are no recipes to list    
         </div>}
-
+        </div>
            {!showing ? <button onClick={() => setShowing({ showing: !showing })}>Add Recipe</button> : null}
                 { showing ?  <form>
                                 <label>recipe-name
@@ -59,10 +59,7 @@ function App() {
                                     </button>
                             </form> 
                 : null
-                }
-        
-
-    </div>
+                }   
     </div>
   );
 }
