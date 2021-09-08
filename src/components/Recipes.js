@@ -45,16 +45,18 @@ return (
 
 
         <div>
-           {!showing ? <button onClick={() => setShowing({ showing: !showing })}>Add Recipe</button> : null}
-                { showing ?  <div>
-                                <p>Recipe Name</p>
+           {!showing ? <button name="Add Recipe"onClick={() => setShowing({ showing: !showing })}>Add Recipe</button> : null}
+                { showing ?  <form>
+                                <label>recipe-name
                                 <input type="text" value={name} name="recipe-name" label="recipe-name" onChange={handleChange} />
-                                <p>Recipe Instructions</p>
+                                </label>
+                                <label>recipe-instructions
                                 <input type="text" value={instruct} name="recipe-instructions" label="recipe-instructions" onChange={handleChange2} />
+                                </label>
                                     <button type="button" onClick={handleAdd}>
                                         Submit
                                     </button>
-                            </div> 
+                            </form> 
                 : null
                 }
         </div> 
