@@ -5,8 +5,8 @@ function App() {
 
   const [list, setList] = useState([]);
   const [list2, setList2] = useState([])
-  const [name, setName] = useState('recipe-name')
-  const [instruct, setInstruct] = useState('recipe-instructions')
+  const [name, setName] = useState('')
+  const [instruct, setInstruct] = useState('')
 
   const [showing, setShowing] = useState(false);
   
