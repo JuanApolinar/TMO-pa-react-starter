@@ -5,8 +5,8 @@ function App() {
 
   const [list, setList] = useState([]);
   const [list2, setList2] = useState([])
-  const [name, setName] = useState('')
-  const [instruct, setInstruct] = useState('')
+  const [name, setName] = useState('recipe-name')
+  const [instruct, setInstruct] = useState('recipe-instructions')
 
   const [showing, setShowing] = useState(false);
   
@@ -49,10 +49,10 @@ function App() {
            {!showing ? <button onClick={() => setShowing({ showing: !showing })}>Add Recipe</button> : null}
                 { showing ?  <form>
                                 <label>recipe-name
-                                <input type="text" value={name} name="recipe-name" onChange={handleChange} />
+                                <textarea type="text" value={name} name="recipe-name" onChange={handleChange} />
                                 </label>
                                 <label>recipe-instructions
-                                <input type="text" value={instruct} name="recipe-instructions" onChange={handleChange2} />
+                                <textarea type="text" value={instruct} name="recipe-instructions" onChange={handleChange2} />
                                 </label>
                                     <button type="button" onClick={handleAdd}>
                                         Submit
