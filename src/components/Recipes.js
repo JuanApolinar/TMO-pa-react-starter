@@ -44,7 +44,7 @@ return (
         </div>}
 
 
-        <div>
+        
            {!showing ? <button name="Add Recipe"onClick={() => setShowing({ showing: !showing })}>Add Recipe</button> : null}
                 { showing ?  <form>
                                 <label>recipe-name
@@ -59,7 +59,7 @@ return (
                             </form> 
                 : null
                 }
-        </div> 
+        
 
     </div>
 )
